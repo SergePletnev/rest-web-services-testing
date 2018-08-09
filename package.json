@@ -1,0 +1,27 @@
+{
+  "name": "rest-web-services-testing",
+  "version": "1.0.0",
+  "description": "Testing rest web services",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "mkdir reports",
+    "test": "mocha",
+    "eslint": "./node_modules/.bin/eslint **/*.js"
+  },
+  "keywords": [
+    "mocha",
+    "rest",
+    "service"
+  ],
+  "author": "Siarhei Pliatniou",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.3.0",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.0.3",
+    "npm": "^6.3.0",
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
