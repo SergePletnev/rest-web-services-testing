@@ -13,8 +13,8 @@ module.exports = {
     },
     "rules": {
 
-      "no-undef" : 2,
-      "no-unused-vars" : 2,
+      "no-undef": 0,
+      "no-unused-vars": 2,
       "no-extra-boolean-cast": 2,
       "comma-dangle": [2, "never"],
       "no-console": 1,
