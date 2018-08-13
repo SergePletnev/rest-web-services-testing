@@ -1,0 +1,14 @@
+{
+    "id": "/Album",
+    "type": "object",
+    "properties": {
+        "userId": {"type": "number"},
+        "id": {"type": "number"},
+        "title": {"type": "string"}
+    },
+    "required": [
+        "userId",
+        "id",
+        "title"
+    ]
+}

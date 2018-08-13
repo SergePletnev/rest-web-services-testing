@@ -1,0 +1,21 @@
+{
+    "id": "/Comment",
+    "type": "object",
+    "properties": {
+        "postId": {"type": "number"},
+        "id": {"type": "number"},
+        "name": {"type": "string"},
+        "email": {
+            "type": "string",
+            "pattern": "\\w+@\\w+.\\w{1,5}"
+        },
+        "body": {"type": "string"}
+    },
+    "required": [
+        "postId",
+        "id",
+        "name",
+        "email",
+        "body"
+    ]
+}

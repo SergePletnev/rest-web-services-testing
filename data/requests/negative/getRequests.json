@@ -1,0 +1,15 @@
+[
+    {
+        "testName": "3 GET request",
+        "uri": "/todos/98",
+        "method": "GET",
+        "expStatusCode": 200,
+        "expStatusMessage": "OK",
+        "expUserId": 5,
+        "expTitle": "debitis accusantium ut quo facilis nihil quis sapiente necessitatibus",
+        "expCompleted": true,
+        "headers": {
+            "User-Agent": "Request-Promise"
+        }
+    }
+]
