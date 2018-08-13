@@ -5,7 +5,10 @@ function sendRestRequestWithHeader(opts) {
         uri: opts.uri,
         method: opts.method,
         headers: opts.header,
-        json: true
+        body: opts.body,
+        resolveWithFullResponse: true,
+        json: true,
+        simple: false
     };
 
     return request(options).then((response) => {
