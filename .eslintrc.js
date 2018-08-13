@@ -78,7 +78,7 @@ module.exports = {
       "no-shadow-restricted-names": 2,
       "no-shadow": 1,
       "no-undef-init" : 2,
-      "no-undefined": 2,
+      "no-undefined": 0,
       "no-use-before-define" : 1,
 
       //STYLISTIC RULES
