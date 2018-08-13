@@ -1,13 +1,110 @@
 [
     {
-        "uri": "/posts/14",
+        "uri": "/posts/96",
         "method": "PUT",
         "body": {
-            "id": 1,
-            "title": "new post",
-            "body": "some body",
-            "userId": 1
+            "id": 96,
+            "title": "my post",
+            "body": "body",
+            "userId": 17
         },
-        "expectedStatusCode": 200
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 200,
+        "responseSchema": "./../data/schemas/postSchema"
+    },
+    {
+        "uri": "/comments/359",
+        "method": "PUT",
+        "body": {
+            "id": 359,
+            "postId": 7,
+            "name": "name",
+            "email": "test@e.com",
+            "body": "my comment"
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 200,
+        "responseSchema": "./../data/schemas/commentSchema"
+    },
+    {
+        "uri": "/albums/73",
+        "method": "PUT",
+        "body": {
+            "id": 73,
+            "userId": 1,
+            "title": "my title"
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 200,
+        "responseSchema": "./../data/schemas/albumSchema"
+    },
+    {
+        "uri": "/photos/22",
+        "method": "PUT",
+        "body": {
+            "id": 22,
+            "albumId": 4,
+            "title": "my title",
+            "url": "http://placehold.it/600/f66b97v44c",
+            "thumbnailUrl": "http://placehold.it/150/f6644svf"
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 200,
+        "responseSchema": "./../data/schemas/photoSchema"
+    },
+    {
+        "uri": "/todos/103",
+        "method": "PUT",
+        "body": {
+            "id": 103,
+            "userId": 1,
+            "title": "my title",
+            "completed": false
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 200,
+        "responseSchema": "./../data/schemas/todoSchema"
+    },
+    {
+        "uri": "/users/6",
+        "method": "PUT",
+        "body": {
+            "id": 6,
+            "name": "Joe",
+            "username": "Black",
+            "email": "Black@e.com",
+            "address": {
+                "street": "Walks",
+                "suite": "Suite 398",
+                "city": "Rosco",
+                "zipcode": "33",
+                "geo": {
+                    "lat": "-3.8129",
+                    "lng": "6.5342"
+                }
+            },
+            "phone": "(254)1289",
+            "website": "black.info",
+            "company": {
+                "name": "Black LLC",
+                "catchPhrase": "black",
+                "bs": "black"
+            }
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 200,
+        "responseSchema": "./../data/schemas/userSchema"
     }
 ]
