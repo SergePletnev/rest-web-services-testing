@@ -1,0 +1,68 @@
+[
+    {
+        "uri": "/posts/17",
+        "method": "PATCH",
+        "body": {
+            "title": "my title"
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 200
+    },
+    {
+        "uri": "/comments/24",
+        "method": "PATCH",
+        "body": {
+            "name": "name"
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 200
+    },
+    {
+        "uri": "/albums/16",
+        "method": "PATCH",
+        "body": {
+            "title": "my title"
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 200
+    },
+    {
+        "uri": "/photos/167",
+        "method": "PATCH",
+        "body": {
+            "title": "my title"
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 200
+    },
+    {
+        "uri": "/todos/3",
+        "method": "PATCH",
+        "body": {
+            "title": "my title"
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 200
+    },
+    {
+        "uri": "/users/8",
+        "method": "PATCH",
+        "body": {
+            "username": "Black"
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 200
+    }
+]

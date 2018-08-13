@@ -1,0 +1,110 @@
+[
+    {
+        "uri": "/posts",
+        "method": "POST",
+        "body": {
+            "id": 102,
+            "title": "my post",
+            "body": "body",
+            "userId": 14
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 201,
+        "responseSchema": "./../data/schemas/postSchema"
+    },
+    {
+        "uri": "/comments",
+        "method": "POST",
+        "body": {
+            "id": 510,
+            "postId": 7,
+            "name": "name",
+            "email": "test@e.com",
+            "body": "my comment"
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 201,
+        "responseSchema": "./../data/schemas/commentSchema"
+    },
+    {
+        "uri": "/albums",
+        "method": "POST",
+        "body": {
+            "id": 120,
+            "userId": 1,
+            "title": "my title"
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 201,
+        "responseSchema": "./../data/schemas/albumSchema"
+    },
+    {
+        "uri": "/photos",
+        "method": "POST",
+        "body": {
+            "id": 5001,
+            "albumId": 1,
+            "title": "my title",
+            "url": "http://placehold.it/600/f66b97vfec",
+            "thumbnailUrl": "http://placehold.it/150/f66b97vfsvf"
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 201,
+        "responseSchema": "./../data/schemas/photoSchema"
+    },
+    {
+        "uri": "/todos",
+        "method": "POST",
+        "body": {
+            "id": 289,
+            "userId": 1,
+            "title": "my title",
+            "completed": false
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 201,
+        "responseSchema": "./../data/schemas/todoSchema"
+    },
+    {
+        "uri": "/users",
+        "method": "POST",
+        "body": {
+            "id": 31,
+            "name": "Joe",
+            "username": "Black",
+            "email": "Black@e.com",
+            "address": {
+                "street": "Walks",
+                "suite": "Suite 398",
+                "city": "Rosco",
+                "zipcode": "33",
+                "geo": {
+                    "lat": "-3.8129",
+                    "lng": "6.5342"
+                }
+            },
+            "phone": "(254)1289",
+            "website": "black.info",
+            "company": {
+                "name": "Black LLC",
+                "catchPhrase": "black",
+                "bs": "black"
+            }
+        },
+        "headers": {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        "expectedStatusCode": 201,
+        "responseSchema": "./../data/schemas/userSchema"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "uri": "/posts/1111",
+        "method": "DELETE",
+        "expectedStatusCode": 404
+    },
+    {
+        "uri": "/comments/-2",
+        "method": "DELETE",
+        "expectedStatusCode": 404
+    },
+    {
+        "uri": "/albums/502",
+        "method": "DELETE",
+        "expectedStatusCode": 404
+    },
+    {
+        "uri": "/photos/0",
+        "method": "DELETE",
+        "expectedStatusCode": 404
+    },
+    {
+        "uri": "/todos/208",
+        "method": "DELETE",
+        "expectedStatusCode": 404
+    },
+    {
+        "uri": "/users/0",
+        "method": "DELETE",
+        "expectedStatusCode": 404
+    }
+]

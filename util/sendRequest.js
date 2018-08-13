@@ -4,7 +4,7 @@ function sendRestRequestWithHeader(opts) {
     let options = {
         uri: opts.uri,
         method: opts.method,
-        headers: opts.header,
+        headers: opts.headers,
         body: opts.body,
         resolveWithFullResponse: true,
         json: true,

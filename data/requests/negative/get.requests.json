@@ -1,0 +1,51 @@
+[
+    {
+        "uri": "/posts/115",
+        "method": "GET",
+        "expectedStatusCode": 404,
+        "headers": {
+            "User-Agent": "Request-Promise"
+        }
+    },
+    {
+        "uri": "/albums/-1",
+        "method": "GET",
+        "expectedStatusCode": 404,
+        "headers": {
+            "User-Agent": "Request-Promise"
+        }
+    },
+    {
+        "uri": "/todos/0",
+        "method": "GET",
+        "expectedStatusCode": 404,
+        "headers": {
+            "User-Agent": "Request-Promise"
+        }
+    },
+    {
+        "uri": "/photos/6147",
+        "method": "GET",
+        "expectedStatusCode": 404,
+        "headers": {
+            "User-Agent": "Request-Promise"
+        }
+    },
+    {
+        "uri": "/comments/725",
+        "method": "GET",
+        "expectedStatusCode": 404,
+        "responseSchema": "./../data/schemas/commentSchema",
+        "headers": {
+            "User-Agent": "Request-Promise"
+        }
+    },
+    {
+        "uri": "/users/0",
+        "method": "GET",
+        "expectedStatusCode": 404,
+        "headers": {
+            "User-Agent": "Request-Promise"
+        }
+    }
+]
