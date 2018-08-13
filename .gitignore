@@ -1,14 +1,5 @@
 ### VisualStudioCode ###
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history
-
-*.log
-*.html
-*.png
 
 ### Node.s ###
 node_modules/
