@@ -3,7 +3,6 @@
         "uri": "/posts/10",
         "method": "GET",
         "expectedStatusCode": 200,
-        "expextedTitle": "optio molestias id quia eum",
         "responseSchema": "./../data/schemas/postSchema",
         "headers": {
             "User-Agent": "Request-Promise"
@@ -13,7 +12,6 @@
         "uri": "/albums/18",
         "method": "GET",
         "expectedStatusCode": 200,
-        "expextedTitle": "nesciunt quia et doloremque",
         "responseSchema": "./../data/schemas/albumSchema",
         "headers": {
             "User-Agent": "Request-Promise"
@@ -23,7 +21,6 @@
         "uri": "/todos/32",
         "method": "GET",
         "expectedStatusCode": 200,
-        "expextedTitle": "earum doloribus ea doloremque quis",
         "responseSchema": "./../data/schemas/todoSchema",
         "headers": {
             "User-Agent": "Request-Promise"
@@ -34,7 +31,6 @@
         "method": "GET",
         "expectedStatusCode": 200,
         "responseSchema": "./../data/schemas/photoSchema",
-        "expextedTitle": "et soluta est",
         "headers": {
             "User-Agent": "Request-Promise"
         }
@@ -55,6 +51,6 @@
         "responseSchema": "./../data/schemas/userSchema",
         "headers": {
             "User-Agent": "Request-Promise"
-          }
+        }
     }
 ]

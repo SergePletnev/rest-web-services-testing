@@ -1,4 +1,4 @@
 --recursive ./test/**/*.js
 --reporter mochawesome 
 --reporter-options reportDir=reports,reportFilename=webServiceTests
---timeout 5000
+--timeout 10000

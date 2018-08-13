@@ -1,0 +1,32 @@
+[
+    {
+        "uri": "/posts/19",
+        "method": "DELETE",
+        "expectedStatusCode": 200
+    },
+    {
+        "uri": "/comments/26",
+        "method": "DELETE",
+        "expectedStatusCode": 200
+    },
+    {
+        "uri": "/albums/36",
+        "method": "DELETE",
+        "expectedStatusCode": 200
+    },
+    {
+        "uri": "/photos/190",
+        "method": "DELETE",
+        "expectedStatusCode": 200
+    },
+    {
+        "uri": "/todos/8",
+        "method": "DELETE",
+        "expectedStatusCode": 200
+    },
+    {
+        "uri": "/users/7",
+        "method": "DELETE",
+        "expectedStatusCode": 200
+    }
+]

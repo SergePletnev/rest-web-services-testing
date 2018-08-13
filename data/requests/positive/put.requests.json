@@ -1,2 +1,13 @@
-
-2
+[
+    {
+        "uri": "/posts/14",
+        "method": "PUT",
+        "body": {
+            "id": 1,
+            "title": "new post",
+            "body": "some body",
+            "userId": 1
+        },
+        "expectedStatusCode": 200
+    }
+]
