@@ -17,3 +17,4 @@ reports/
 *.json
 !package.json
 !package-lock.json
+!data/
