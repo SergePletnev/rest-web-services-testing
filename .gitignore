@@ -13,8 +13,3 @@
 ### Node.s ###
 node_modules/
 reports/
-
-*.json
-!package.json
-!package-lock.json
-!data/
