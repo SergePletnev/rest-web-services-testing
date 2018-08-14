@@ -3,7 +3,7 @@
 // const deleteRequests = require('./../../data/requests/negative/delete.requests');
 // const env = require('./../../endpoint/test');
 
-// describe('[DELETE] Positive requests tests', () => {
+// describe('[DELETE] Negative requests tests', () => {
 
 //     const emptyBody = {};
 //     deleteRequests.forEach((request) => {

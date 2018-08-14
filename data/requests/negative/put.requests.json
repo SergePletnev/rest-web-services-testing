@@ -1,6 +1,7 @@
 [
     {
-        "uri": "/posts/96",
+        "description": "Incorrect uri",
+        "uri": "/posts/0",
         "method": "PUT",
         "body": {
             "id": 96,
@@ -11,79 +12,79 @@
         "headers": {
             "Content-type": "application/json; charset=UTF-8"
         },
-        "expectedStatusCode": 200,
+        "expectedStatusCode": 404,
         "responseSchema": "./../data/schemas/postSchema"
     },
     {
+        "description": "Incorrect body: empty keys",
         "uri": "/comments/359",
         "method": "PUT",
         "body": {
             "id": 359,
             "postId": 7,
             "name": "name",
-            "email": "test@e.com",
-            "body": "my comment"
+            "f": "test@e.com",
+            "": "my comment"
         },
         "headers": {
             "Content-type": "application/json; charset=UTF-8"
         },
-        "expectedStatusCode": 200,
+        "expectedStatusCode": 400,
         "responseSchema": "./../data/schemas/commentSchema"
     },
     {
+        "description": "Incorrect body: empty values",
         "uri": "/albums/73",
         "method": "PUT",
         "body": {
             "id": 73,
             "userId": 1,
-            "title": "my title"
+            "title": ""
         },
         "headers": {
             "Content-type": "application/json; charset=UTF-8"
         },
-        "expectedStatusCode": 200,
+        "expectedStatusCode": 400,
         "responseSchema": "./../data/schemas/albumSchema"
     },
     {
+        "description": "Incorrect body: required parameters not set",
         "uri": "/photos/22",
         "method": "PUT",
         "body": {
             "id": 22,
             "albumId": 4,
-            "title": "my title",
-            "url": "http://placehold.it/600/f66b97v44c",
-            "thumbnailUrl": "http://placehold.it/150/f6644svf"
+            "title": "my title"
         },
         "headers": {
             "Content-type": "application/json; charset=UTF-8"
         },
-        "expectedStatusCode": 200,
+        "expectedStatusCode": 400,
         "responseSchema": "./../data/schemas/photoSchema"
     },
     {
+        "description": "Incorrect body: empty body",
         "uri": "/todos/103",
         "method": "PUT",
         "body": {
-            "id": 103,
-            "userId": 1,
-            "title": "my title",
-            "completed": false
+
         },
         "headers": {
             "Content-type": "application/json; charset=UTF-8"
         },
-        "expectedStatusCode": 200,
+        "expectedStatusCode": 400,
         "responseSchema": "./../data/schemas/todoSchema"
     },
     {
+        "description": "Wrong body: unknown keys",
         "uri": "/users/6",
         "method": "PUT",
         "body": {
             "id": 6,
-            "name": "Joe",
-            "username": "Black",
-            "email": "Black@e.com",
-            "address": {
+            "cdscdscds": "Joe",
+            "fdscdscds": "Black",
+            "cdscds": "Black@e.com",
+            "cfcrscd": {
                 "street": "Walks",
                 "suite": "Suite 398",
                 "city": "Rosco",
@@ -93,9 +94,9 @@
                     "lng": "6.5342"
                 }
             },
-            "phone": "(254)1289",
-            "website": "black.info",
-            "company": {
+            "cccc": "(254)1289",
+            "vvvv": "black.info",
+            "vrrrrr": {
                 "name": "Black LLC",
                 "catchPhrase": "black",
                 "bs": "black"
@@ -104,7 +105,7 @@
         "headers": {
             "Content-type": "application/json; charset=UTF-8"
         },
-        "expectedStatusCode": 200,
+        "expectedStatusCode": 400,
         "responseSchema": "./../data/schemas/userSchema"
     }
 ]

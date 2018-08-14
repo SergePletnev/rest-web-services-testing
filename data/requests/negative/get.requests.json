@@ -1,5 +1,6 @@
 [
     {
+        "description": "Invalid uri request",
         "uri": "/posts/115",
         "method": "GET",
         "expectedStatusCode": 404,
@@ -8,6 +9,7 @@
         }
     },
     {
+        "description": "Invalid uri request",
         "uri": "/albums/-1",
         "method": "GET",
         "expectedStatusCode": 404,
@@ -16,6 +18,7 @@
         }
     },
     {
+        "description": "Invalid uri request",
         "uri": "/todos/0",
         "method": "GET",
         "expectedStatusCode": 404,
@@ -24,6 +27,7 @@
         }
     },
     {
+        "description": "Invalid uri",
         "uri": "/photos/6147",
         "method": "GET",
         "expectedStatusCode": 404,
@@ -32,6 +36,7 @@
         }
     },
     {
+        "description": "Invalid uri request",
         "uri": "/comments/725",
         "method": "GET",
         "expectedStatusCode": 404,
@@ -41,6 +46,7 @@
         }
     },
     {
+        "description": "Invalid uri request",
         "uri": "/users/0",
         "method": "GET",
         "expectedStatusCode": 404,

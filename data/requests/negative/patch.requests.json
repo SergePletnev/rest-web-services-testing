@@ -1,28 +1,31 @@
 [
     {
-        "uri": "/posts/17",
+        "description": "Invalid uri",
+        "uri": "/posts/1723",
         "method": "PATCH",
         "body": {
-            "title": "my title"
+            "my title": "my title"
         },
         "headers": {
             "Content-type": "application/json; charset=UTF-8"
         },
-        "expectedStatusCode": 200
+        "expectedStatusCode": 404
     },
     {
+        "description": "Wrong body: empty values",
         "uri": "/comments/24",
         "method": "PATCH",
         "body": {
-            "name": "name"
+            "name": ""
         },
         "headers": {
             "Content-type": "application/json; charset=UTF-8"
         },
-        "expectedStatusCode": 200
+        "expectedStatusCode": 400
     },
     {
-        "uri": "/albums/16",
+        "description": "Invalid uri",
+        "uri": "/albums/-1",
         "method": "PATCH",
         "body": {
             "title": "my title"
@@ -30,21 +33,22 @@
         "headers": {
             "Content-type": "application/json; charset=UTF-8"
         },
-        "expectedStatusCode": 200
+        "expectedStatusCode": 404
     },
     {
+        "description": "Wrong body: empty keys",
         "uri": "/photos/167",
         "method": "PATCH",
         "body": {
-            "title": "my title"
+            "": "my title"
         },
         "headers": {
             "Content-type": "application/json; charset=UTF-8"
         },
-        "expectedStatusCode": 200
+        "expectedStatusCode": 400
     },
     {
-        "uri": "/todos/3",
+        "uri": "/todos/30000",
         "method": "PATCH",
         "body": {
             "title": "my title"
@@ -52,17 +56,18 @@
         "headers": {
             "Content-type": "application/json; charset=UTF-8"
         },
-        "expectedStatusCode": 200
+        "expectedStatusCode": 404
     },
     {
-        "uri": "/users/8",
+        "description": "Wrong body: empty body",
+        "uri": "/users/2",
         "method": "PATCH",
         "body": {
-            "username": "Black"
+
         },
         "headers": {
             "Content-type": "application/json; charset=UTF-8"
         },
-        "expectedStatusCode": 200
+        "expectedStatusCode": 400
     }
 ]

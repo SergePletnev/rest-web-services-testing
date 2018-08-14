@@ -1,10 +1,9 @@
 // const { expect } = require('chai');
 // const sendRequest = require('./../../util/sendRequest');
-// const postRequests = require('./../../data/requests/positive/post.requests');
+// const postRequests = require('./../../data/requests/negative/post.requests');
 // const env = require('./../../endpoint/test');
-// const getValidationErrors = require('./../../util/helper');
 
-// describe('[POST] Positive requests tests', () => {
+// describe('[POST] Negative requests tests', () => {
 
 //     postRequests.forEach((request) => {
 //         let response;
@@ -19,14 +18,6 @@
 //             expect(response.statusCode).to.eql(request.expectedStatusCode);
 //         });
 
-//         it(`[POST ${url}]: verifying response body`, () => {
-//             const errors = getValidationErrors(response.body, request.responseSchema);
-//             expect(errors.length).to.equal(0);
-//         });
-
-//         it(`[POST ${url}]: comparing sent and received data`, () => {
-//             expect(response.body).to.eql(request.body);
-//         });
 //     });
 
 // });
