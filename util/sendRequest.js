@@ -11,8 +11,6 @@ function sendRestRequestWithHeader(opts) {
         simple: false
     };
 
-    Object.keys(options).forEach((key) => (options[key] === undefined) && delete options[key]);
-
     return request(options).then((response) => {
         return response;
     });
