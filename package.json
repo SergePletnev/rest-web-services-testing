@@ -21,7 +21,7 @@
     "eslint": "^5.16.0",
     "jsonschema": "^1.2.4",
     "mocha": "^5.2.0",
-    "mochawesome": "^3.0.3",
+    "mochawesome": "^7.1.3",
     "request": "^2.87.0",
     "request-promise-native": "^1.0.5"
   }
